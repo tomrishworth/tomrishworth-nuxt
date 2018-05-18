@@ -1,0 +1,48 @@
+@import "variable-overrides";
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap-vue/dist/bootstrap-vue";
+
+@import "base/type";
+
+@import "utilities/additional-utilities";
+
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-image {
+  // max-width: 520px;
+  padding: 10px 10px 30px 10px;
+  background: $gradient;
+  transition: transform 300ms ease;
+  text-align: center;
+  margin: 0 0 30px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 60px 60px 30px 60px;
+  }
+  // &:hover {
+  //   transform: scale(0.98);
+  //   img {
+  //     transform: scale(1.05);
+  //   }
+  // }
+  img {
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    // transition: transform 300ms ease;
+  }
+  figcaption {
+    margin-top: 20px;
+    color: #6c8990;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+}
