@@ -1,3 +1,5 @@
+const PurgecssPlugin = require("purgecss-webpack-plugin");
+const glob = require("glob-all");
 const path = require("path");
 
 module.exports = {
@@ -40,15 +42,17 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
-      // const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
-      // vueLoader.options.loaders.scss = 'vue-style-loader!css-loader!sass-loader?' + JSON.stringify({
-      //   data: [
-      //     path.resolve(__dirname, '../node_modules/bootstrap/scss/_functions.scss'),
-      //     path.resolve(__dirname, '../node_modules/bootstrap/scss/_variables.scss'),
-      //     path.resolve(__dirname, '../node_modules/bootstrap/scss/_mixins.scss')
-      //   ]
-      // })
       if (isDev && isClient) {
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue')
+            ]),
+            whitelist: ['html', 'body']
+          })
+        )
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
