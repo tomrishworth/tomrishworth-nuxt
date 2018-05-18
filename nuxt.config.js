@@ -16,10 +16,10 @@ module.exports = {
     ]
   },
   modules: [
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
 
     // Or if you have custom bootstrap CSS...
-    ['bootstrap-vue/nuxt', { css: false }],
+    // ['bootstrap-vue/nuxt', { css: false }],
 
     ['nuxt-sass-resources-loader', [
         '@/node_modules/bootstrap/scss/_functions.scss',
