@@ -2,8 +2,9 @@
   <div class="sidebar">
       <div class="p-3">
           <div class="text-center">
-              <div class="avatar mb-3"><img src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1506112626/me-2016-bw_illaj7.jpg"
-                  /></div>
+              <div class="avatar mb-3">
+                <img v-cl-image="'me-2016'" width="auto" responsive fetch_format="auto" quality="auto">
+                </div>
               <h1 class="text-xl font-weight-bold">Tom Rishworth</h1>
               <div class="line ml-auto mr-auto"></div>
           </div>
@@ -12,10 +13,10 @@
               <p>Currently working at <a href="http://webscope.co.nz">Webscope NZ</a></p>
           </div>
           <div class="d-flex justify-content-center">
-              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/codepen.svg"/></a></div>
-              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/github.svg"/></a></div>
-              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/twitter.svg"/></a></div>
-              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/envelope.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="https://codepen.io/tomrishworth/"><img width="25px" src="../assets/icons/codepen.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="https://github.com/tomrishworth"><img width="25px" src="../assets/icons/github.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="https://twitter.com/tomrishworth"><img width="25px" src="../assets/icons/twitter.svg"/></a></div>
+              <div class="px-1"><a id="email" class="p-1" href="mailto:tomrishworth@gmail.com"><img width="25px" src="../assets/icons/envelope.svg"/></a></div>
           </div>
       </div>
   </div>
@@ -46,3 +47,6 @@
 }
 
 </style>
+
+
+

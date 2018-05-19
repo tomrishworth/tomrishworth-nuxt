@@ -2,8 +2,7 @@
   <div>
     <div class="container container-md">
       <div class="text-center mb-3">
-        <img width="200" src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1526633956/LMS_logo_ott10j.png"
-          />
+        <img v-cl-image="'LMS_logo'" width="200" responsive fetch_format="auto" quality="auto">
       </div>
       <div class="row mb-3">
         <div class="col-sm-6">
@@ -38,7 +37,6 @@
     <div class="container container-lg">
       <figure class="project-image h-100">
         <img v-cl-image="'lms-desktop'" width="auto" responsive fetch_format="auto" quality="auto">
-        <figcaption>AGM Dashboard</figcaption>
       </figure>
     </div>
   </div>
