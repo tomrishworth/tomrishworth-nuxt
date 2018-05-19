@@ -7,11 +7,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'tomrishworth2018',
+    title: 'Tom Rishworth',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Tom Rishworth - Portfolio' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -29,7 +29,7 @@ module.exports = {
         '@/node_modules/bootstrap/scss/_mixins.scss',
     ]],
   ],
-
+  plugins: ['~/plugins/vue-cloudinary'],
   /*
   ** Customize the progress bar color
   */
@@ -38,6 +38,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    // vendor: ['vue-cloundinary'],
     /*
     ** Run ESLint on save
     */

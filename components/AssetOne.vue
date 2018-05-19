@@ -1,43 +1,39 @@
 <template>
   <div>
-    <div class="container-md">
+    <div class="container container-md">
       <div class="text-center mb-3">
-        <img src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1506140104/Screen_Shot_2017-09-23_at_4.14.54_PM_uep6gy.png"
-          />
+        <img v-cl-image="'asset-one-logo'" width="auto" responsive fetch_format="auto" quality="auto">
       </div>
-      <div class="row">
-        <div class="col col-sm-6">
+      <div class="row mb-3">
+        <div class="col-sm-6">
           <p class="text-md">A bespoke application built for Alpha West City Towing to help increase the efficiency and accuracy
                   of running their business.</p>
         </div>
-        <div class="col col-sm-6">
+        <div class="col-sm-6">
           <p class="text-md">The app manages all aspects of the day-to-day running of a towing business, from taking the initial
                   job details, to dispatching jobs and managing the storage of vehicles, through to generating
                   invoices and producing detailed job logs which are send to the police.</p>
         </div>
       </div>
     </div>
-    <div class="container-lg">
+    <div class="container container-xl">
       <figure class="project-image col-12">
-        <img src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1505974478/4._Dispatch_-_Schedule_job_for_future_date_bkdfdy.png"
-              alt="">
+        <img v-cl-image="'asset-one-dispatch'" width="auto" responsive fetch_format="auto" quality="auto">
         <figcaption>Dispatch Screen - Overview of all unscheduled jobs. Jobs can be assisgned to drivers from this screen.</figcaption>
       </figure>
       <figure class="project-image col-12">
-        <img src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1506131901/asset-one-edit-letter-template_dgogja.jpg"
-              alt="">
+        <img v-cl-image="'asset-one-edit-letter'" width="auto" responsive fetch_format="auto" quality="auto">
         <figcaption>Letter Generator - Creates a template for generating letters that are prepopluated with all customer
               &amp; job details</figcaption>
       </figure>
     </div>
-    <div class="container-md my-4">
+    <div class="container container-md my-4">
         <div class="row">
             <div class="col-sm-6">
-              <div class="pl-5 mb-2">
-                  <img width="200px" src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1506142377/asset-one-app-icon_di4fef.png"
-                      alt="">
+              <div class="pl-sm-5 mb-2">
+                  <img v-cl-image="'asset-one-app-icon'" width="auto" responsive fetch_format="auto" quality="auto">
               </div>
-              <h3 class="">Companion Driver App</h3>
+              <h3 class="text-lg">Companion Driver App</h3>
               <p class="text-md">We also built a native android app for drivers to use during the day, to see their upcoming jobs,
                     and get detailed job info. The app automatically tracks the driver via gps, and updates their
                     status as they progress through the various stages of completing a job. This then updates
@@ -45,24 +41,25 @@
             </div>
         </div>
     </div>
-    <div class="container-lg mb-2">
-      <div class="row">
-        <div class="col col-sm-6">
+    <div class="container container-lg my-4">
+      <div class="row mb-3 mb-md-5">
+        <div class="col-sm-6">
           <figure class="project-image h-100">
-            <img src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1505725959/driver-app1_e8hhus.jpg">
+            <img v-cl-image="'driver-app'" width="auto" responsive fetch_format="auto" quality="auto">
+
             <figcaption>Drivers can see all upcoming jobs for the day</figcaption>
           </figure>
         </div>
-        <div class="col col-sm-6">
+        <div class="col-sm-6">
           <figure class="project-image h-100">
-              <img src="http://res.cloudinary.com/atmosphere-studios/image/upload/v1505726196/driver-app2_dqclnq.jpg">
+              <img v-cl-image="'driver-app2'" width="auto" responsive fetch_format="auto" quality="auto">
               <figcaption>Drivers can get an overview of the job at a glance, and click into each section for more
                     details</figcaption>
           </figure>
         </div>
       </div>
     </div>
-    <div class="container-lg my-4">
+    <div class="container container-lg my-4">
       <div class="row">
         <div class="col-sm-6">
           <div class="">

@@ -20,7 +20,8 @@
     "nuxt": "^1.0.0",
     "nuxt-sass-resources-loader": "^2.0.0",
     "purgecss-webpack-plugin": "^0.22.1",
-    "sass-loader": "^7.0.1"
+    "sass-loader": "^7.0.1",
+    "vue-cloudinary": "^0.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

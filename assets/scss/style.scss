@@ -19,6 +19,13 @@ img {
   height: auto;
 }
 
+hr {
+  @include media-breakpoint-up(lg) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .project-image {
   // max-width: 520px;
   padding: 10px 10px 30px 10px;

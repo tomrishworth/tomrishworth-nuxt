@@ -1,17 +1,19 @@
 <template>
   <div>
-    <div class="container-lg px-2 px-sm-5 py-3 border-bottom bg-light">
-      <h2 class="text-lg mb-0 font-weight-bold">Recent Work</h2>
+    <div class="border-bottom">
+      <div class="pt-5 pt-lg-3 pl-4 py-3 ">
+        <h2 class="text-lg mb-0 font-weight-bold">Recent Work</h2>
+      </div>
     </div>
-    <section class="container-lg px-2 px-sm-5 py-3">
+    <section class="py-3">
       <asset-one />
     </section>
     <hr />
-    <section class="container-lg px-2 px-sm-5 py-3">
+    <section class="py-3">
       <cook-islands />
     </section>
     <hr />
-    <section class="container-lg px-2 px-sm-5 py-3">
+    <section class="py-3">
       <link-agm />
     </section>
   </div>
@@ -33,6 +35,7 @@ export default {
 
 <style lang="scss">
 @import "@/assets/scss/style.scss";
+
 </style>
 
 

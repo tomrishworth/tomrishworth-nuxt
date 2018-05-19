@@ -12,10 +12,10 @@
               <p>Currently working at <a href="http://webscope.co.nz">Webscope NZ</a></p>
           </div>
           <div class="d-flex justify-content-center">
-              <div class="px-1"><a class="p-1" href="#"><img width="30px" src="../assets/icons/codepen.svg"/></a></div>
-              <div class="px-1"><a class="p-1" href="#"><img width="30px" src="../assets/icons/github.svg"/></a></div>
-              <div class="px-1"><a class="p-1" href="#"><img width="30px" src="../assets/icons/twitter.svg"/></a></div>
-              <div class="px-1"><a class="p-1" href="#"><img width="30px" src="../assets/icons/envelope.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/codepen.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/github.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/twitter.svg"/></a></div>
+              <div class="px-1"><a class="p-1" href="#"><img width="25px" src="../assets/icons/envelope.svg"/></a></div>
           </div>
       </div>
   </div>
@@ -26,7 +26,7 @@
 .sidebar {
   box-shadow: 0 0 25px 0 rgba(0,0,0,0.1);
   border-bottom: 1px solid #eee;
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     position: fixed;
     top: 0;
     left: 0;

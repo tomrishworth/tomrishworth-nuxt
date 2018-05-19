@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 
 .main-content {
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     margin-left: 330px;
   }
 }
