@@ -2,7 +2,9 @@
   <div>
     <div class="container container-md">
       <div class="text-center mb-3">
-        <img v-cl-image="'LMS_logo'" width="200" responsive fetch_format="auto" quality="auto">
+        <div class="mx-auto" style="width:200px;">
+          <img v-cl-image="'LMS_logo'" responsive fetch_format="auto" quality="auto">
+        </div>
       </div>
       <div class="row mb-3">
         <div class="col-sm-6">
