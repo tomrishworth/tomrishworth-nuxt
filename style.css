@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Marat Sans';
+  font-weight: 400;
+  src: url('marat_sans_regular-webfont.woff') format('woff');
+}
+
+body {
+  font-family: 'Marat Sans';
+  color: #555;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-100px, -200px, 0);
+} */
+
+@media screen and (min-width: 30em) {
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-100px, -200px, 0);
+  }
+}
+
+.bio {
+  padding: 5%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(100px, 200px, 0); */
+}
+
+.links a:hover {
+  position: relative;
+  top: -1px;
+}
